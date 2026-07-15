@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "product_id": "farmer",
+  "product_name": "FarmerTasksAI",
+  "official_domain": "farmertasksai.com",
+  "official_github_repo": "https://github.com/TasksAI-Official/tasksai-mcp-wrappers",
+  "official_package": "@tasksai/install",
+  "installer": {
+    "preferred": "npm_exec",
+    "npm_exec": {
+      "command": "npm",
+      "args": [
+        "exec",
+        "--package=@tasksai/install",
+        "--call",
+        "tasksai-install farmer --source https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/farmer"
+      ],
+      "requires": [
+        "node",
+        "npm"
+      ]
+    }
+  },
+  "supported_clients": [
+    "claude_desktop",
+    "cursor",
+    "windsurf",
+    "codex"
+  ],
+  "permissions": {
+    "write_paths": {
+      "macos": [
+        "~/Library/Application Support/TasksAI/farmer",
+        "~/Library/Application Support/Claude/claude_desktop_config.json",
+        "~/.cursor/mcp.json",
+        "~/.codeium/windsurf/mcp_config.json",
+        "~/.codex/config.toml"
+      ],
+      "windows": [
+        "%LOCALAPPDATA%\\TasksAI\\farmer",
+        "%APPDATA%\\Claude\\claude_desktop_config.json",
+        "%USERPROFILE%\\.cursor\\mcp.json",
+        "%USERPROFILE%\\.codeium\\windsurf\\mcp_config.json",
+        "%USERPROFILE%\\.codex\\config.toml"
+      ],
+      "linux": [
+        "~/.local/share/TasksAI/farmer",
+        "~/.config/Claude/claude_desktop_config.json",
+        "~/.cursor/mcp.json",
+        "~/.codeium/windsurf/mcp_config.json",
+        "~/.codex/config.toml"
+      ]
+    },
+    "environment_overrides": [
+      "TASKSAI_INSTALL_DIR"
+    ],
+    "notes": "TASKSAI_INSTALL_DIR or --install-dir may point to an exact alternate product install directory in restricted agent environments."
+  },
+  "auth": {
+    "method": "browser_device_flow",
+    "connect_url": "https://farmertasksai.com/connect",
+    "fallback": "license_key"
+  },
+  "security": {
+    "require_domain_verification": true,
+    "require_repo_verification": true,
+    "disallow_arbitrary_manifest_commands": true,
+    "native_installer_user_approval_required": true
+  },
+  "health_check": {
+    "command": "npm",
+    "args": [
+      "exec",
+      "--package=@tasksai/install",
+      "--call",
+      "tasksai-install farmer doctor"
+    ]
+  },
+  "uninstall": {
+    "command": "npm",
+    "args": [
+      "exec",
+      "--package=@tasksai/install",
+      "--call",
+      "tasksai-install farmer uninstall"
+    ]
+  },
+  "support": {
+    "url": "https://farmertasksai.com/support",
+    "email": "support@farmertasksai.com"
+  },
+  "runtime": {
+    "source": "shared_installer",
+    "notes": "The wrapper repo provides product metadata; @tasksai/install supplies the shared MCP runtime."
+  },
+  "official_manifest_path": "verticals/farmer/agent-install.json",
+  "official_source_url": "https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/farmer"
+}

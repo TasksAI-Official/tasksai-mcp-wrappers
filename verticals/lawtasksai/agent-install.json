@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "product_id": "lawtasksai",
+  "product_name": "LawTasksAI",
+  "official_domain": "lawtasksai.com",
+  "official_github_repo": "https://github.com/TasksAI-Official/tasksai-mcp-wrappers",
+  "official_package": "@tasksai/install",
+  "installer": {
+    "preferred": "npm_exec",
+    "npm_exec": {
+      "command": "npm",
+      "args": [
+        "exec",
+        "--package=@tasksai/install",
+        "--call",
+        "tasksai-install lawtasksai --source https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/lawtasksai"
+      ],
+      "requires": [
+        "node",
+        "npm"
+      ]
+    }
+  },
+  "supported_clients": [
+    "claude_desktop",
+    "cursor",
+    "windsurf",
+    "codex"
+  ],
+  "permissions": {
+    "write_paths": {
+      "macos": [
+        "~/Library/Application Support/TasksAI/lawtasksai",
+        "~/Library/Application Support/Claude/claude_desktop_config.json",
+        "~/.cursor/mcp.json",
+        "~/.codeium/windsurf/mcp_config.json",
+        "~/.codex/config.toml"
+      ],
+      "windows": [
+        "%LOCALAPPDATA%\\TasksAI\\lawtasksai",
+        "%APPDATA%\\Claude\\claude_desktop_config.json",
+        "%USERPROFILE%\\.cursor\\mcp.json",
+        "%USERPROFILE%\\.codeium\\windsurf\\mcp_config.json",
+        "%USERPROFILE%\\.codex\\config.toml"
+      ],
+      "linux": [
+        "~/.local/share/TasksAI/lawtasksai",
+        "~/.config/Claude/claude_desktop_config.json",
+        "~/.cursor/mcp.json",
+        "~/.codeium/windsurf/mcp_config.json",
+        "~/.codex/config.toml"
+      ]
+    },
+    "environment_overrides": [
+      "TASKSAI_INSTALL_DIR"
+    ],
+    "notes": "TASKSAI_INSTALL_DIR or --install-dir may point to an exact alternate product install directory in restricted agent environments."
+  },
+  "auth": {
+    "method": "browser_device_flow",
+    "connect_url": "https://lawtasksai.com/connect",
+    "fallback": "license_key"
+  },
+  "security": {
+    "require_domain_verification": true,
+    "require_repo_verification": true,
+    "disallow_arbitrary_manifest_commands": true,
+    "native_installer_user_approval_required": true
+  },
+  "health_check": {
+    "command": "npm",
+    "args": [
+      "exec",
+      "--package=@tasksai/install",
+      "--call",
+      "tasksai-install lawtasksai doctor"
+    ]
+  },
+  "uninstall": {
+    "command": "npm",
+    "args": [
+      "exec",
+      "--package=@tasksai/install",
+      "--call",
+      "tasksai-install lawtasksai uninstall"
+    ]
+  },
+  "support": {
+    "url": "https://lawtasksai.com/support",
+    "email": "support@lawtasksai.com"
+  },
+  "runtime": {
+    "source": "shared_installer",
+    "notes": "The wrapper repo provides product metadata; @tasksai/install supplies the shared MCP runtime."
+  },
+  "official_manifest_path": "verticals/lawtasksai/agent-install.json",
+  "official_source_url": "https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/lawtasksai"
+}

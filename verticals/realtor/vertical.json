@@ -1,0 +1,11 @@
+{
+  "product_id": "realtor",
+  "display_name": "RealtorTasksAI",
+  "tool_prefix": "realtortasksai",
+  "api_base_url": "https://api.lawtasksai.com",
+  "website_url": "https://realtortasksai.com",
+  "billing_url": "https://realtortasksai.com/#pricing",
+  "support_email": "hello@realtortasksai.com",
+  "privacy_summary": "RealtorTasksAI servers handle authentication, credits, catalog/search metadata, and licensed skill delivery. RealtorTasksAI does not process the user's listing, client, transaction, or generated output content. The user's chosen AI assistant or LLM performs the task work according to that provider's privacy terms, and saved files are created locally by the MCP runtime.",
+  "first_prompt": "Check my RealtorTasksAI credit balance."
+}
