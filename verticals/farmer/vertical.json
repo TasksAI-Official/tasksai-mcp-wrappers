@@ -2,10 +2,10 @@
   "product_id": "farmer",
   "display_name": "FarmerTasksAI",
   "tool_prefix": "farmertasksai",
-  "api_base_url": "https://lawtasksai-api-5gn3dehgyq-uc.a.run.app",
+  "api_base_url": "https://api.lawtasksai.com",
   "website_url": "https://farmertasksai.com",
   "billing_url": "https://farmertasksai.com/#pricing",
-  "support_email": "support@farmertasksai.com",
-  "privacy_summary": "FarmerTasksAI servers handle authentication, credits, catalog/search metadata, and licensed skill delivery. FarmerTasksAI does not process the user's farm task content or generated output files. The user's chosen AI assistant or LLM performs the task work according to that provider's privacy terms, and saved files are created locally by the MCP runtime.",
-  "first_prompt": "Check my FarmerTasksAI credit balance."
+  "support_email": "hello@farmertasksai.com",
+  "privacy_summary": "FarmerTasksAI servers handle authentication, account and credit state, catalog metadata, licensed workflow delivery, and content-free activation events. FarmerTasksAI does not receive farm notes, field or livestock records, prompt text, generated drafts, or local file paths. The user's chosen AI assistant or LLM performs the task work under that provider's privacy terms, and the local MCP runtime saves finished files on the user's machine.",
+  "first_prompt": "Help me create a crop production record from my notes. Ask me for the crop, field, acreage, planting date, variety, inputs, and observations, then organize the result as a table and save it as a local Word document."
 }

@@ -1,22 +1,31 @@
 # FarmerTasksAI Examples
 
-After installation, try:
+These are public usage examples, not proprietary workflow content.
+
+## Confirm the connection
 
 ```text
 Check my FarmerTasksAI credit balance.
 ```
 
-Then:
+## Create the first useful file
 
 ```text
-Search FarmerTasksAI for a crop insurance claim workflow.
+Help me create a crop production record from my notes. Ask me for the crop,
+field, acreage, planting date, variety, inputs, and observations, then organize
+the result as a table and save it as a local Word document.
 ```
 
-Or:
+Review dates, acreage, quantities, units, field identifiers, and application
+records against source notes before relying on the file.
+
+## Find another workflow
 
 ```text
-Search FarmerTasksAI for USDA loan application help.
+Show me FarmerTasksAI workflows for equipment maintenance logs, farm audit
+checklists, and grant narratives.
 ```
 
-FarmerTasksAI delivers licensed workflow materials. Your own AI assistant
-performs the work.
+FarmerTasksAI delivers licensed workflow materials. The selected AI assistant
+performs the work, and the local MCP runtime saves requested files on the
+user's machine. Outputs are structured drafts, not official submissions.

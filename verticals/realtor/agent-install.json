@@ -22,7 +22,7 @@
     }
   },
   "supported_clients": [
-    "claude_desktop",
+    "claude-desktop",
     "cursor",
     "windsurf",
     "codex"
@@ -75,6 +75,12 @@
       "--call",
       "tasksai-install realtor doctor"
     ]
+  },
+  "post_install": {
+    "run_health_check": true,
+    "health_check_client": "same_as_install",
+    "restart_client": true,
+    "first_file_prompt": "Help me create an open-house buyer follow-up email from my showing notes. Ask me for the property, the buyer's stated priorities, and the next step, then save the finished draft as a local Word document."
   },
   "uninstall": {
     "command": "npm",
