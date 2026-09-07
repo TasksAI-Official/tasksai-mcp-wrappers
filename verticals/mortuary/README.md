@@ -28,7 +28,7 @@ npm exec --package=@tasksai/install --call 'tasksai-install mortuary doctor --cl
 
 A passing check prints `TasksAI doctor passed.` Restart the selected client, then try:
 
-> Help me prepare a monthly financial statement summary for a fictional funeral home. Ask for revenue categories, operating expenses, payroll, accounts receivable, cash balance, and notable variances, then save the finished summary as a local Word document.
+> Help me prepare a monthly financial statement summary for a fictional funeral home using the Prepare monthly financial statements workflow. Ask for revenue categories, operating expenses, payroll, accounts receivable, cash balance, and notable variances, then save the finished summary as a local Word document.
 
 Finished files are saved locally under `~/Documents/TasksAI/MortuaryTasksAI/` unless `TASKSAI_OUTPUT_DIR` is configured.
 
