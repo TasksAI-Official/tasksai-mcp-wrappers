@@ -28,7 +28,7 @@ npm exec --package=@tasksai/install --call 'tasksai-install mortgage doctor --cl
 
 A passing check prints `TasksAI doctor passed.` Restart the selected client, then try:
 
-> Help me write a preapproval congratulations letter for a fictional borrower. Ask for the loan program, amount, expiration date, conditions, loan officer contact details, and next steps, then save the finished letter as a local Word document.
+> Help me write a preapproval congratulations letter for a fictional borrower using the Write a pre-approval congratulations letter workflow. Ask for the loan program, amount, expiration date, conditions, loan officer contact details, and next steps, then save the finished letter as a local Word document.
 
 Finished files are saved locally under `~/Documents/TasksAI/MortgageTasksAI/` unless `TASKSAI_OUTPUT_DIR` is configured.
 

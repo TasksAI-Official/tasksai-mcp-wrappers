@@ -80,7 +80,7 @@
     "run_health_check": true,
     "health_check_client": "same_as_install",
     "restart_client": true,
-    "first_file_prompt": "Help me write a preapproval congratulations letter for a fictional borrower. Ask for the loan program, amount, expiration date, conditions, loan officer contact details, and next steps, then save the finished letter as a local Word document."
+    "first_file_prompt": "Help me write a preapproval congratulations letter for a fictional borrower using the Write a pre-approval congratulations letter workflow. Ask for the loan program, amount, expiration date, conditions, loan officer contact details, and next steps, then save the finished letter as a local Word document."
   },
   "uninstall": {
     "command": "npm",

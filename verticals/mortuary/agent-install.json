@@ -80,7 +80,7 @@
     "run_health_check": true,
     "health_check_client": "same_as_install",
     "restart_client": true,
-    "first_file_prompt": "Help me prepare a monthly financial statement summary for a fictional funeral home. Ask for revenue categories, operating expenses, payroll, accounts receivable, cash balance, and notable variances, then save the finished summary as a local Word document."
+    "first_file_prompt": "Help me prepare a monthly financial statement summary for a fictional funeral home using the Prepare monthly financial statements workflow. Ask for revenue categories, operating expenses, payroll, accounts receivable, cash balance, and notable variances, then save the finished summary as a local Word document."
   },
   "uninstall": {
     "command": "npm",
