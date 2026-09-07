@@ -21,7 +21,7 @@ TasksAI products add licensed, profession-specific workflows to MCP-capable AI a
 
 The shared installer package is `@tasksai/install`. Product websites, account connection, credits, and licensed workflow delivery are handled by TasksAI services.
 
-## Initial Products
+## Production Products
 
 | Product | Folder | Website |
 |---|---|---|
@@ -29,6 +29,12 @@ The shared installer package is `@tasksai/install`. Product websites, account co
 | TeacherTasksAI | `verticals/teacher` | https://teachertasksai.com |
 | RealtorTasksAI | `verticals/realtor` | https://realtortasksai.com |
 | LawTasksAI | `verticals/lawtasksai` | https://lawtasksai.com |
+| ElectricianTasksAI | `verticals/electrician` | https://electriciantasksai.com |
+| HRTasksAI | `verticals/hr` | https://hrtasksai.com |
+| InsuranceTasksAI | `verticals/insurance` | https://insurancetasksai.com |
+| MortgageTasksAI | `verticals/mortgage` | https://mortgagetasksai.com |
+| MortuaryTasksAI | `verticals/mortuary` | https://mortuarytasksai.com |
+| RestaurantTasksAI | `verticals/restaurant` | https://restauranttasksai.com |
 
 ## Install Source Format
 
@@ -53,4 +59,3 @@ https://raw.githubusercontent.com/TasksAI-Official/tasksai-mcp-wrappers/main/ver
 ## Support
 
 For product support, use the support link or email listed in that product's `vertical.json`.
-

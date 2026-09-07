@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "product_id": "insurance",
+  "product_name": "InsuranceTasksAI",
+  "official_domain": "insurancetasksai.com",
+  "official_github_repo": "https://github.com/TasksAI-Official/tasksai-mcp-wrappers",
+  "official_package": "@tasksai/install",
+  "installer": {
+    "preferred": "npm_exec",
+    "npm_exec": {
+      "command": "npm",
+      "args": [
+        "exec",
+        "--package=@tasksai/install",
+        "--call",
+        "tasksai-install insurance --source https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/insurance"
+      ],
+      "requires": [
+        "node",
+        "npm"
+      ]
+    }
+  },
+  "supported_clients": [
+    "claude-desktop",
+    "cursor",
+    "windsurf",
+    "codex"
+  ],
+  "permissions": {
+    "write_paths": {
+      "macos": [
+        "~/Library/Application Support/TasksAI/insurance",
+        "~/Library/Application Support/Claude/claude_desktop_config.json",
+        "~/.cursor/mcp.json",
+        "~/.codeium/windsurf/mcp_config.json",
+        "~/.codex/config.toml"
+      ],
+      "windows": [
+        "%LOCALAPPDATA%\\TasksAI\\insurance",
+        "%APPDATA%\\Claude\\claude_desktop_config.json",
+        "%USERPROFILE%\\.cursor\\mcp.json",
+        "%USERPROFILE%\\.codeium\\windsurf\\mcp_config.json",
+        "%USERPROFILE%\\.codex\\config.toml"
+      ],
+      "linux": [
+        "~/.local/share/TasksAI/insurance",
+        "~/.config/Claude/claude_desktop_config.json",
+        "~/.cursor/mcp.json",
+        "~/.codeium/windsurf/mcp_config.json",
+        "~/.codex/config.toml"
+      ]
+    },
+    "environment_overrides": [
+      "TASKSAI_INSTALL_DIR"
+    ],
+    "notes": "TASKSAI_INSTALL_DIR or --install-dir may point to an exact alternate product install directory in restricted agent environments."
+  },
+  "auth": {
+    "method": "browser_device_flow",
+    "connect_url": "https://insurancetasksai.com/connect",
+    "fallback": "license_key"
+  },
+  "security": {
+    "require_domain_verification": true,
+    "require_repo_verification": true,
+    "disallow_arbitrary_manifest_commands": true,
+    "native_installer_user_approval_required": true
+  },
+  "health_check": {
+    "command": "npm",
+    "args": [
+      "exec",
+      "--package=@tasksai/install",
+      "--call",
+      "tasksai-install insurance doctor"
+    ]
+  },
+  "post_install": {
+    "run_health_check": true,
+    "health_check_client": "same_as_install",
+    "restart_client": true,
+    "first_file_prompt": "Help me prepare a policy summary letter for a fictional small business. Ask for the coverage types, limits, deductibles, exclusions to highlight, renewal date, and contact details, then save the finished letter as a local Word document."
+  },
+  "uninstall": {
+    "command": "npm",
+    "args": [
+      "exec",
+      "--package=@tasksai/install",
+      "--call",
+      "tasksai-install insurance uninstall"
+    ]
+  },
+  "support": {
+    "url": "https://insurancetasksai.com/support",
+    "email": "hello@insurancetasksai.com"
+  },
+  "runtime": {
+    "source": "shared_installer",
+    "notes": "The wrapper provides public product metadata; @tasksai/install supplies the shared MCP runtime."
+  },
+  "official_manifest_path": "verticals/insurance/agent-install.json",
+  "official_source_url": "https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/insurance"
+}

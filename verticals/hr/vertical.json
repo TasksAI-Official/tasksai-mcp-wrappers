@@ -1,0 +1,11 @@
+{
+  "product_id": "hr",
+  "display_name": "HRTasksAI",
+  "tool_prefix": "hrtasksai",
+  "api_base_url": "https://api.lawtasksai.com",
+  "website_url": "https://hrtasksai.com",
+  "billing_url": "https://hrtasksai.com/#pricing",
+  "support_email": "hello@hrtasksai.com",
+  "privacy_summary": "HRTasksAI services handle authentication, account and credit state, catalog metadata, licensed workflow delivery, and content-free activation events. HRTasksAI does not receive applicant or employee details, personnel records, investigation notes, or generated drafts. The selected AI assistant or LLM performs the task under that provider's privacy terms, and the local MCP runtime saves finished files on the user's machine.",
+  "first_prompt": "Help me write a job posting for an office manager. Ask for responsibilities, qualifications, schedule, location, compensation range, and application instructions, then save the finished posting as a local Word document."
+}
