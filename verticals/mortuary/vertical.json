@@ -1,0 +1,11 @@
+{
+  "product_id": "mortuary",
+  "display_name": "MortuaryTasksAI",
+  "tool_prefix": "mortuarytasksai",
+  "api_base_url": "https://api.lawtasksai.com",
+  "website_url": "https://mortuarytasksai.com",
+  "billing_url": "https://mortuarytasksai.com/#pricing",
+  "support_email": "hello@mortuarytasksai.com",
+  "privacy_summary": "MortuaryTasksAI services handle authentication, account and credit state, catalog metadata, licensed workflow delivery, and content-free activation events. MortuaryTasksAI does not receive decedent or family details, health records, authorization documents, case files, or generated drafts. The selected AI assistant or LLM performs the task under that provider's privacy terms, and the local MCP runtime saves finished files on the user's machine.",
+  "first_prompt": "Help me prepare a monthly financial statement summary for a fictional funeral home. Ask for revenue categories, operating expenses, payroll, accounts receivable, cash balance, and notable variances, then save the finished summary as a local Word document."
+}

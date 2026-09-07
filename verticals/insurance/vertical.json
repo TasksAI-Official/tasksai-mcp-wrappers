@@ -1,0 +1,11 @@
+{
+  "product_id": "insurance",
+  "display_name": "InsuranceTasksAI",
+  "tool_prefix": "insurancetasksai",
+  "api_base_url": "https://api.lawtasksai.com",
+  "website_url": "https://insurancetasksai.com",
+  "billing_url": "https://insurancetasksai.com/#pricing",
+  "support_email": "hello@insurancetasksai.com",
+  "privacy_summary": "InsuranceTasksAI services handle authentication, account and credit state, catalog metadata, licensed workflow delivery, and content-free activation events. InsuranceTasksAI does not receive policyholder details, claim records, underwriting data, coverage documents, or generated drafts. The selected AI assistant or LLM performs the task under that provider's privacy terms, and the local MCP runtime saves finished files on the user's machine.",
+  "first_prompt": "Help me prepare a policy summary letter for a fictional small business. Ask for the coverage types, limits, deductibles, exclusions to highlight, renewal date, and contact details, then save the finished letter as a local Word document."
+}

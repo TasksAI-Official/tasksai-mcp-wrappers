@@ -1,0 +1,11 @@
+{
+  "product_id": "electrician",
+  "display_name": "ElectricianTasksAI",
+  "tool_prefix": "electriciantasksai",
+  "api_base_url": "https://api.lawtasksai.com",
+  "website_url": "https://electriciantasksai.com",
+  "billing_url": "https://electriciantasksai.com/#pricing",
+  "support_email": "hello@electriciantasksai.com",
+  "privacy_summary": "ElectricianTasksAI services handle authentication, account and credit state, catalog metadata, licensed workflow delivery, and content-free activation events. ElectricianTasksAI does not receive customer details, estimates, permit records, job notes, or generated drafts. The selected AI assistant or LLM performs the task under that provider's privacy terms, and the local MCP runtime saves finished files on the user's machine.",
+  "first_prompt": "Help me prepare an electrical service estimate for a 200-amp panel replacement. Ask for the labor, materials, exclusions, schedule, and customer assumptions, then save the finished estimate as a local Word document."
+}

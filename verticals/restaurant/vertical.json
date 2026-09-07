@@ -1,0 +1,11 @@
+{
+  "product_id": "restaurant",
+  "display_name": "RestaurantTasksAI",
+  "tool_prefix": "restauranttasksai",
+  "api_base_url": "https://api.lawtasksai.com",
+  "website_url": "https://restauranttasksai.com",
+  "billing_url": "https://restauranttasksai.com/#pricing",
+  "support_email": "hello@restauranttasksai.com",
+  "privacy_summary": "RestaurantTasksAI services handle authentication, account and credit state, catalog metadata, licensed workflow delivery, and content-free activation events. RestaurantTasksAI does not receive employee details, customer records, vendor information, inspection records, or generated drafts. The selected AI assistant or LLM performs the task under that provider's privacy terms, and the local MCP runtime saves finished files on the user's machine.",
+  "first_prompt": "Help me write a staff scheduling memo for a fictional restaurant. Ask for the schedule period, shift changes, coverage expectations, time-off reminders, manager contact, and acknowledgement deadline, then save the finished memo as a local Word document."
+}

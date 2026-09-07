@@ -1,0 +1,11 @@
+{
+  "product_id": "mortgage",
+  "display_name": "MortgageTasksAI",
+  "tool_prefix": "mortgagetasksai",
+  "api_base_url": "https://api.lawtasksai.com",
+  "website_url": "https://mortgagetasksai.com",
+  "billing_url": "https://mortgagetasksai.com/#pricing",
+  "support_email": "hello@mortgagetasksai.com",
+  "privacy_summary": "MortgageTasksAI services handle authentication, account and credit state, catalog metadata, licensed workflow delivery, and content-free activation events. MortgageTasksAI does not receive borrower details, credit or income records, loan documents, property records, or generated drafts. The selected AI assistant or LLM performs the task under that provider's privacy terms, and the local MCP runtime saves finished files on the user's machine.",
+  "first_prompt": "Help me write a preapproval congratulations letter for a fictional borrower. Ask for the loan program, amount, expiration date, conditions, loan officer contact details, and next steps, then save the finished letter as a local Word document."
+}
