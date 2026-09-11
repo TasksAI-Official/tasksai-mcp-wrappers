@@ -34,7 +34,7 @@ Copy this prompt into Claude Desktop, Cursor, Windsurf, or Codex:
 For Claude Desktop:
 
 ```bash
-npm exec --package=@tasksai/install@0.1.40 --call 'tasksai-install realtor --source https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/realtor --client claude-desktop'
+npm exec --package=@tasksai/install@0.1.41 --call 'tasksai-install realtor --source https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/realtor --client claude-desktop'
 ```
 
 Replace `claude-desktop` with `cursor`, `windsurf`, or `codex` when installing
@@ -46,7 +46,7 @@ The installer runs doctor after writing the selected client configuration. It
 can also be rerun explicitly for the same client:
 
 ```bash
-npm exec --package=@tasksai/install@0.1.40 --call 'tasksai-install realtor doctor --client claude-desktop'
+npm exec --package=@tasksai/install@0.1.41 --call 'tasksai-install realtor doctor --client claude-desktop'
 ```
 
 A passing check prints `TasksAI doctor passed.` Restart the selected client,
