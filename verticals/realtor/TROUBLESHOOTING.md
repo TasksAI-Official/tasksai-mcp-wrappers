@@ -29,7 +29,7 @@ fallback; do not paste a license key into chat or MCP client configuration.
 Run doctor with the same client selected during installation. For example:
 
 ```bash
-npm exec --package=@tasksai/install@0.1.41 --call 'tasksai-install realtor doctor --client claude-desktop'
+npm exec --package=@tasksai/install@0.1.42 --call 'tasksai-install realtor doctor --client claude-desktop'
 ```
 
 Supported client values are `claude-desktop`, `cursor`, `windsurf`, and
