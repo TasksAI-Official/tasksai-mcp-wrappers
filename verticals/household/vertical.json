@@ -1,0 +1,11 @@
+{
+  "product_id": "household",
+  "display_name": "HouseholdTasksAI",
+  "tool_prefix": "householdtasksai",
+  "api_base_url": "https://api.lawtasksai.com",
+  "website_url": "https://householdtasksai.com",
+  "billing_url": "https://householdtasksai.com/#pricing",
+  "support_email": "hello@householdtasksai.com",
+  "privacy_summary": "HouseholdTasksAI servers handle authentication, account and credit state, catalog metadata, licensed workflow delivery, and content-free activation events. HouseholdTasksAI does not receive household notes, health records, prompt text, generated drafts, or local file paths. The user's chosen AI assistant processes supplied information under its own privacy terms. Finished files are saved locally.",
+  "first_prompt": "Help me make a weekly household schedule. Ask for the week, time zone, commitments, travel time, and responsibilities. Flag conflicts and missing information, then save the schedule as a local Word document."
+}
