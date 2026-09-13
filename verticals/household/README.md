@@ -33,3 +33,7 @@ Help me make a weekly household schedule. Ask for the week, time zone, commitmen
 HouseholdTasksAI servers handle authentication, account and credit state, catalog metadata, licensed workflow delivery, and content-free activation events. HouseholdTasksAI does not receive household notes, health records, prompt text, generated drafts, or local file paths. The user's chosen AI assistant processes supplied information under its own privacy terms. Finished files are saved locally.
 
 Review outputs before use. For support, contact hello@householdtasksai.com.
+
+## Infrastructure release
+
+The shared installer support is published as `@tasksai/install@0.1.44` (npm tag `household`). This manifest pins that version. The public website is coming soon and the backend remains inactive: customer signup, checkout, and new connections are disabled. Publishing the infrastructure does not publish any skills or enable customer access.

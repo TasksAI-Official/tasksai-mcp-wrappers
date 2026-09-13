@@ -11,7 +11,7 @@
       "command": "npm",
       "args": [
         "exec",
-        "--package=@tasksai/install",
+        "--package=@tasksai/install@0.1.44",
         "--call",
         "tasksai-install household --source https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/household"
       ],
@@ -71,7 +71,7 @@
     "command": "npm",
     "args": [
       "exec",
-      "--package=@tasksai/install",
+      "--package=@tasksai/install@0.1.44",
       "--call",
       "tasksai-install household doctor"
     ]
@@ -86,7 +86,7 @@
     "command": "npm",
     "args": [
       "exec",
-      "--package=@tasksai/install",
+      "--package=@tasksai/install@0.1.44",
       "--call",
       "tasksai-install household uninstall"
     ]
@@ -97,7 +97,7 @@
   },
   "runtime": {
     "source": "shared_installer",
-    "notes": "The wrapper repo provides product metadata; @tasksai/install supplies the shared MCP runtime."
+    "notes": "Infrastructure package 0.1.44 is published under the household tag. Customer connections remain disabled while Household is inactive."
   },
   "official_manifest_path": "verticals/household/agent-install.json",
   "official_source_url": "https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/household"
