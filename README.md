@@ -36,6 +36,10 @@ The shared installer package is `@tasksai/install`. Product websites, account co
 | MortuaryTasksAI | `verticals/mortuary` | https://mortuarytasksai.com |
 | RestaurantTasksAI | `verticals/restaurant` | https://restauranttasksai.com |
 
+## Prepared for release
+
+HouseholdTasksAI metadata is in `verticals/household`. Public signup and skill release are pending.
+
 ## Install Source Format
 
 Each vertical folder has its own manifest:
