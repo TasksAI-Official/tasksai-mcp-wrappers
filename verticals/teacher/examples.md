@@ -4,8 +4,8 @@ Try prompts like:
 
 - Write a parent progress update
 - Draft report card comments
-- Prepare an IEP goal summary
-- Create a behavior plan documentation
+- Prepare a draft IEP team discussion summary from supplied, de-identified facts
+- Organize de-identified behavior observations for authorized team review
 - Write a substitute teacher note
 
 You can also ask:

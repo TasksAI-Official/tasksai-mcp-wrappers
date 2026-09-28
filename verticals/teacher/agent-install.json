@@ -11,7 +11,7 @@
       "command": "npm",
       "args": [
         "exec",
-        "--package=@tasksai/install",
+        "--package=@tasksai/install@0.1.46",
         "--call",
         "tasksai-install teacher --source https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/teacher"
       ],
@@ -27,6 +27,33 @@
     "windsurf",
     "codex"
   ],
+  "permissions": {
+    "write_paths": {
+      "macos": [
+        "~/Library/Application Support/TasksAI/teacher",
+        "~/Library/Application Support/Claude/claude_desktop_config.json",
+        "~/.cursor/mcp.json",
+        "~/.codeium/windsurf/mcp_config.json",
+        "~/.codex/config.toml"
+      ],
+      "windows": [
+        "%LOCALAPPDATA%\\TasksAI\\teacher",
+        "%APPDATA%\\Claude\\claude_desktop_config.json",
+        "%USERPROFILE%\\.cursor\\mcp.json",
+        "%USERPROFILE%\\.codeium\\windsurf\\mcp_config.json",
+        "%USERPROFILE%\\.codex\\config.toml"
+      ],
+      "linux": [
+        "~/.local/share/TasksAI/teacher",
+        "~/.config/Claude/claude_desktop_config.json",
+        "~/.cursor/mcp.json",
+        "~/.codeium/windsurf/mcp_config.json",
+        "~/.codex/config.toml"
+      ]
+    },
+    "environment_overrides": ["TASKSAI_INSTALL_DIR"],
+    "notes": "TASKSAI_INSTALL_DIR or --install-dir may point to an exact alternate product install directory in restricted agent environments."
+  },
   "auth": {
     "method": "browser_device_flow",
     "connect_url": "https://teachertasksai.com/connect",
@@ -42,16 +69,22 @@
     "command": "npm",
     "args": [
       "exec",
-      "--package=@tasksai/install",
+      "--package=@tasksai/install@0.1.46",
       "--call",
       "tasksai-install teacher doctor"
     ]
+  },
+  "post_install": {
+    "run_health_check": true,
+    "health_check_client": "same_as_install",
+    "restart_client": true,
+    "first_file_prompt": "Help me create a one-page classroom procedures handout for a fictional Grade 7 mathematics class, then save the finished draft as a local Word document."
   },
   "uninstall": {
     "command": "npm",
     "args": [
       "exec",
-      "--package=@tasksai/install",
+      "--package=@tasksai/install@0.1.46",
       "--call",
       "tasksai-install teacher uninstall"
     ]
@@ -65,5 +98,20 @@
     "notes": "The wrapper repo provides product metadata; @tasksai/install supplies the shared MCP runtime."
   },
   "official_manifest_path": "verticals/teacher/agent-install.json",
-  "official_source_url": "https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/teacher"
+  "official_source_url": "https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/teacher",
+  "local_workspace": true,
+  "agent_setup": {
+    "instructions_file": "AGENT-SETUP.md",
+    "requires": "Command execution on the customer computer and write access to the selected client configuration; a remote sandbox alone is insufficient.",
+    "node_missing": "Use the verified packaged native launcher below instead of asking the customer to install Node manually.",
+    "native_bootstrap": {
+      "package_version": "0.1.46",
+      "archive_url": "https://registry.npmjs.org/@tasksai/install/-/install-0.1.46.tgz",
+      "archive_sha256": "08f242d268dbb8c7a315b875b58a6c9c96a8cc7d70ae1599eade621cb8b3034e",
+      "macos": "package/bootstrap/Install TeacherTasksAI.command",
+      "windows": "package/bootstrap/Install TeacherTasksAI.ps1",
+      "requires_complete_package": true,
+      "customer_download_journey_validated": false
+    }
+  }
 }
