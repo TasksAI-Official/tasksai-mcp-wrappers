@@ -1,17 +1,63 @@
-# Troubleshooting
+# TeacherTasksAI Troubleshooting
 
-## The install command cannot run
+## The installer cannot verify the source
 
-Install Node.js from https://nodejs.org/. Node includes npm and npx. Then rerun the install prompt from the README.
+Stop installation. The official source must be exactly:
 
-## Browser connection does not open
+```text
+https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/teacher
+```
 
-Go to `https://teachertasksai.com/connect` and enter the connection code shown by the installer.
+The manifest must identify product `teacher`, domain `teachertasksai.com`, and
+package `@tasksai/install`. Do not approve a substituted repository, package,
+domain, or arbitrary command.
 
-## The account is not found
+## Node.js or npm is missing
 
-Use the same email address used for TeacherTasksAI signup or purchase. Manual license-key entry is available only as a fallback.
+Install the current Node.js LTS release from https://nodejs.org/. npm is
+included. Then rerun the official install prompt or command from `README.md`.
 
-## Tools do not appear
+## Browser account connection does not finish
 
-Restart your MCP client after installation. For Claude Desktop, start a new conversation after approving the connector.
+Confirm the browser is on `https://teachertasksai.com/connect` and that the
+displayed code matches the installer. Rerun the installer if the code expires.
+Use manual license-key entry only when the official installer offers it as the
+fallback; do not paste a license key into chat or MCP client configuration.
+
+## Doctor reports a missing client configuration
+
+Run doctor with the same client selected during installation. For example:
+
+```bash
+npm exec --package=@tasksai/install@0.1.46 --call 'tasksai-install teacher doctor --client claude-desktop'
+```
+
+Supported client values are `claude-desktop`, `cursor`, `windsurf`, and
+`codex`. A passing check prints `TasksAI doctor passed.`
+
+## The installer cannot write a required path
+
+Allow the selected AI assistant or Terminal to write the product install
+directory and that client's MCP configuration path declared in
+`agent-install.json`. In a restricted environment, `--install-dir` or
+`TASKSAI_INSTALL_DIR` may point to an exact alternate TeacherTasksAI install
+directory, but the selected client configuration must still be writable.
+
+## Tools do not appear after doctor passes
+
+Restart Claude Desktop, Cursor, Windsurf, or Codex after installation. Start a
+new conversation or reload the workspace if the client caches MCP tools. Then
+ask: `Check my TeacherTasksAI credit balance.`
+
+## A finished file is not visible
+
+Ask the assistant to use `teachertasksai_save_document`. By default, files are
+saved under `~/Documents/TasksAI/TeacherTasksAI/`. If `TASKSAI_OUTPUT_DIR` is
+set, check that configured folder. Local output does not appear on the
+TeacherTasksAI website.
+
+## No credits are available
+
+Visit https://teachertasksai.com/#pricing. If the balance appears incorrect,
+contact support@teachertasksai.com without sending student, family, staff, or
+classroom content.
