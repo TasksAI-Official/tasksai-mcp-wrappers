@@ -101,5 +101,19 @@
   },
   "official_manifest_path": "verticals/realtor/agent-install.json",
   "official_source_url": "https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/realtor",
-  "local_workspace": true
+  "local_workspace": true,
+  "agent_setup": {
+    "instructions_file": "AGENT-SETUP.md",
+    "requires": "Command execution on the customer's actual computer and write access to the selected client configuration; a remote sandbox alone is insufficient.",
+    "node_missing": "Use the verified packaged native launcher below instead of asking the customer to install Node manually.",
+    "native_bootstrap": {
+      "package_version": "0.1.45",
+      "archive_url": "https://registry.npmjs.org/@tasksai/install/-/install-0.1.45.tgz",
+      "archive_sha256": "d76343382a408b791902ee6b7f4e4613c26a79a2d44282c5ac740b73d1b49d51",
+      "macos": "package/bootstrap/Install RealtorTasksAI.command",
+      "windows": "package/bootstrap/Install RealtorTasksAI.ps1",
+      "requires_complete_package": true,
+      "customer_download_journey_validated": false
+    }
+  }
 }
