@@ -80,7 +80,7 @@
     "run_health_check": true,
     "health_check_client": "same_as_install",
     "restart_client": true,
-    "first_file_prompt": "Help me create a one-day lesson plan. Ask for the grade band, subject, learning objective, available time and materials, and any required standards or school constraints. Mark anything not supplied for educator review, then save the finished plan as a local Word document."
+    "first_file_prompt": "Write a daily lesson plan and save the finished plan as a local Word document."
   },
   "uninstall": {
     "command": "npm",
