@@ -7,5 +7,5 @@
   "billing_url": "https://teachertasksai.com/buy-credits.html",
   "support_email": "support@teachertasksai.com",
   "privacy_summary": "TeacherTasksAI servers handle authentication, credits, catalog/search metadata, and licensed skill delivery. TeacherTasksAI does not process the user's task content or generated output files. The user's chosen AI assistant or LLM performs the task work according to that provider's privacy terms, and saved files are created locally by the MCP runtime.",
-  "first_prompt": "Check my TeacherTasksAI credit balance."
+  "first_prompt": "Help me create a one-day lesson plan. Ask for the grade band, subject, learning objective, available time and materials, and any required standards or school constraints. Mark anything not supplied for educator review, then save the finished plan as a local Word document."
 }
