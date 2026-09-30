@@ -13,7 +13,7 @@ Read `agent-install.json` and `vertical.json` before running anything. Confirm:
 - domain: `teachertasksai.com`
 - repository: `TasksAI-Official/tasksai-mcp-wrappers`
 - package: `@tasksai/install`
-- installer version: `0.1.46`
+- installer version: `0.1.47`
 
 Stop if any of these values, the repository, the package, or the declared
 installer command has been substituted. Run only the command or native
