@@ -11,7 +11,7 @@
       "command": "npm",
       "args": [
         "exec",
-        "--package=@tasksai/install@0.1.46",
+        "--package=@tasksai/install@0.1.47",
         "--call",
         "tasksai-install teacher --source https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/teacher"
       ],
@@ -71,7 +71,7 @@
     "command": "npm",
       "args": [
         "exec",
-        "--package=@tasksai/install@0.1.46",
+        "--package=@tasksai/install@0.1.47",
         "--call",
         "tasksai-install teacher doctor"
       ]
@@ -86,7 +86,7 @@
     "command": "npm",
       "args": [
         "exec",
-        "--package=@tasksai/install@0.1.46",
+        "--package=@tasksai/install@0.1.47",
         "--call",
         "tasksai-install teacher uninstall"
     ]
@@ -107,9 +107,9 @@
     "requires": "Command execution on the customer's actual computer and write access to the selected client configuration; a remote sandbox alone is insufficient.",
     "node_missing": "Use the verified packaged native launcher below instead of asking the customer to install Node manually.",
     "native_bootstrap": {
-      "package_version": "0.1.46",
-      "archive_url": "https://registry.npmjs.org/@tasksai/install/-/install-0.1.46.tgz",
-      "archive_sha256": "f21a5d83b239901db2f2cef5eca9d4c2924d0f50f49d157c9aa01fc2cb32e305",
+      "package_version": "0.1.47",
+      "archive_url": "https://registry.npmjs.org/@tasksai/install/-/install-0.1.47.tgz",
+      "archive_sha256": "61867110296b19efa6b4487c0ef930db53b2941b009ae3b38250218e92a447c5",
       "macos": "package/bootstrap/Install TeacherTasksAI.command",
       "windows": "package/bootstrap/Install TeacherTasksAI.ps1",
       "requires_complete_package": true,
