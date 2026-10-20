@@ -18,7 +18,7 @@ Product ID: `household`. Tool prefix: `householdtasksai`. Installer: `@tasksai/i
 npm exec --package=@tasksai/install --call 'tasksai-install household --source https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/household --client claude-desktop'
 ```
 
-Supported clients: Claude Desktop, Cursor, Windsurf, and Codex. Client values: `claude-desktop`, `cursor`, `windsurf`, `codex`. Select the intended client, use browser account connection, run doctor for the same client, and restart that client.
+Supported clients: Claude Desktop, Cursor, Windsurf, Codex, and Gemini CLI. Client values: `claude-desktop`, `cursor`, `windsurf`, `codex`, `gemini`. Select the intended client, use browser account connection, run doctor for the same client, and restart that client.
 
 ```bash
 npm exec --package=@tasksai/install --call 'tasksai-install household doctor --client claude-desktop'

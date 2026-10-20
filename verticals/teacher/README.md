@@ -18,7 +18,7 @@ and the installer package is `@tasksai/install`.
 
 ## AI-assistant install prompt
 
-Copy this prompt into Codex, Cursor, or Windsurf running on the computer where
+Copy this prompt into Codex, Cursor, Windsurf, or Gemini CLI running on the computer where
 you want to use TeacherTasksAI. Ordinary browser or mobile Claude and ChatGPT
 sessions cannot install local software. Claude Desktop uses the Terminal route
 below.
@@ -40,8 +40,8 @@ For Claude Desktop:
 npm exec --package=@tasksai/install@0.1.47 --call 'tasksai-install teacher --source https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/teacher --client claude-desktop'
 ```
 
-Replace `claude-desktop` with `cursor`, `windsurf`, or `codex` when installing
-for a different supported client. Node.js and npm are required.
+Replace `claude-desktop` with `cursor`, `windsurf`, `codex`, or `gemini` when installing
+for a different supported client. Node.js and npm are required. Gemini users must also install Gemini CLI and sign in with their chosen Google account.
 
 ## Verify the installation
 
@@ -69,6 +69,7 @@ Finished files are saved locally under
 - Cursor (`cursor`)
 - Windsurf (`windsurf`)
 - Codex (`codex`)
+- Gemini CLI (`gemini`)
 
 ## Privacy boundary
 

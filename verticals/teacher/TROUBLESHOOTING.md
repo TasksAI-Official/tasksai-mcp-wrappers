@@ -32,8 +32,8 @@ Run doctor with the same client selected during installation. For example:
 npm exec --package=@tasksai/install@0.1.47 --call 'tasksai-install teacher doctor --client claude-desktop'
 ```
 
-Supported client values are `claude-desktop`, `cursor`, `windsurf`, and
-`codex`. A passing check prints `TasksAI doctor passed.`
+Supported client values are `claude-desktop`, `cursor`, `windsurf`, `codex`, and
+`gemini`. A passing check prints `TasksAI doctor passed.`
 
 ## The installer cannot write a required path
 
@@ -45,7 +45,7 @@ directory, but the selected client configuration must still be writable.
 
 ## Tools do not appear after doctor passes
 
-Restart Claude Desktop, Cursor, Windsurf, or Codex after installation. Start a
+Restart Claude Desktop, Cursor, Windsurf, Codex, or Gemini CLI after installation. Start a
 new conversation or reload the workspace if the client caches MCP tools. Then
 ask: `Check my TeacherTasksAI credit balance.`
 

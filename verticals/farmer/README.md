@@ -18,7 +18,7 @@ and the installer package is `@tasksai/install`.
 
 ## AI-assistant install prompt
 
-Copy this prompt into Claude Desktop, Cursor, Windsurf, or Codex:
+Copy this prompt into Claude Desktop, Cursor, Windsurf, Codex, or Gemini CLI:
 
 > Set up FarmerTasksAI from the official source at
 > https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/farmer.
@@ -38,8 +38,8 @@ For Claude Desktop:
 npm exec --package=@tasksai/install --call 'tasksai-install farmer --source https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/farmer --client claude-desktop'
 ```
 
-Replace `claude-desktop` with `cursor`, `windsurf`, or `codex` when installing
-for a different supported client. Node.js and npm are required.
+Replace `claude-desktop` with `cursor`, `windsurf`, `codex`, or `gemini` when installing
+for a different supported client. Node.js and npm are required. Gemini users must also install Gemini CLI and sign in with their chosen Google account.
 
 ## Verify the installation
 
@@ -66,6 +66,7 @@ unless `TASKSAI_OUTPUT_DIR` is configured.
 - Cursor (`cursor`)
 - Windsurf (`windsurf`)
 - Codex (`codex`)
+- Gemini CLI (`gemini`)
 
 ## Privacy boundary
 

@@ -12,4 +12,4 @@ Run doctor with the same client used for installation:
 npm exec --package=@tasksai/install --call 'tasksai-install mortuary doctor --client claude-desktop'
 ```
 
-Supported clients are `claude-desktop`, `cursor`, `windsurf`, and `codex`. Restart the selected client after doctor passes. Contact hello@mortuarytasksai.com without sending task records or generated files.
+Supported clients are `claude-desktop`, `cursor`, `windsurf`, `codex`, and `gemini`. Restart the selected client after doctor passes. Contact hello@mortuarytasksai.com without sending task records or generated files.

@@ -18,7 +18,7 @@ For Claude Desktop:
 npm exec --package=@tasksai/install --call 'tasksai-install mortgage --source https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/mortgage --client claude-desktop'
 ```
 
-Replace `claude-desktop` with `cursor`, `windsurf`, or `codex` for another supported client.
+Replace `claude-desktop` with `cursor`, `windsurf`, `codex`, or `gemini` for another supported client.
 
 ## Verify and start
 
