@@ -4,6 +4,19 @@ This folder contains the public install manifest and product metadata for LawTas
 
 LawTasksAI adds legal-administration, drafting-support, and law-office workflow materials to MCP-capable AI applications.
 
+## Terminal install
+
+```bash
+npm exec --package=@tasksai/install --call 'tasksai-install lawtasksai --source https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/lawtasksai --client claude-desktop'
+```
+
+Supported client values are `claude-desktop`, `cursor`, `windsurf`, `codex`,
+`gemini`, and `antigravity`. For personal Google accounts, install Google Antigravity; use `gemini` only for a supported legacy account or API configuration. After installation, run:
+
+```bash
+npm exec --package=@tasksai/install --call 'tasksai-install lawtasksai doctor --client claude-desktop'
+```
+
 ## Source
 
 ```text
@@ -13,6 +26,10 @@ https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/law
 ## Website
 
 https://lawtasksai.com
+
+## Google Gemini clients
+
+Use `antigravity` for the Google Antigravity desktop app or terminal client with a personal Google account. Use `gemini` only for the legacy Gemini CLI when an API-key or enterprise configuration still supports it. Antigravity uses `~/.gemini/config/mcp_config.json`; the legacy client uses `~/.gemini/settings.json`. After installation, restart the selected client. For the Google Antigravity desktop app, fully quit and reopen the app; closing only the window can leave it running without loading the new TasksAI tools.
 
 ## Privacy
 

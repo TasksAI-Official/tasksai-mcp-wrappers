@@ -2,7 +2,7 @@
 
 This repository contains public installer manifests and product metadata for TasksAI vertical products.
 
-TasksAI products add licensed, profession-specific workflows to MCP-capable AI applications such as Claude Desktop, Cursor, Windsurf, and Codex. This repository is the public installation catalog those AI applications can inspect before setup.
+TasksAI products add licensed, profession-specific workflows to MCP-capable AI applications such as Claude Desktop, Cursor, Windsurf, Codex, and Gemini CLI. This repository is the public installation catalog those AI applications can inspect before setup.
 
 ## What Is In This Repository
 

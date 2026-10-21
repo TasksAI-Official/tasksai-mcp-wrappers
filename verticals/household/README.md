@@ -18,7 +18,11 @@ Product ID: `household`. Tool prefix: `householdtasksai`. Installer: `@tasksai/i
 npm exec --package=@tasksai/install --call 'tasksai-install household --source https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/household --client claude-desktop'
 ```
 
-Supported clients: Claude Desktop, Cursor, Windsurf, and Codex. Client values: `claude-desktop`, `cursor`, `windsurf`, `codex`. Select the intended client, use browser account connection, run doctor for the same client, and restart that client.
+Supported clients: Claude Desktop, Cursor, Windsurf, Codex, Google Antigravity,
+and the legacy Gemini CLI. Client values: `claude-desktop`, `cursor`,
+`windsurf`, `codex`, `antigravity`, and `gemini`. Select the intended client,
+use browser account connection, run doctor for the same client, and restart
+that client.
 
 ```bash
 npm exec --package=@tasksai/install --call 'tasksai-install household doctor --client claude-desktop'
@@ -27,6 +31,10 @@ npm exec --package=@tasksai/install --call 'tasksai-install household doctor --c
 ## First document
 
 Help me make a weekly household schedule. Ask for the week, time zone, commitments, travel time, and responsibilities. Flag conflicts and missing information, then save the schedule as a local Word document.
+
+## Google Gemini clients
+
+Use `antigravity` for the Google Antigravity desktop app or terminal client with a personal Google account. Use `gemini` only for the legacy Gemini CLI when an API-key or enterprise configuration still supports it. Antigravity uses `~/.gemini/config/mcp_config.json`; the legacy client uses `~/.gemini/settings.json`. After installation, restart the selected client. For the Google Antigravity desktop app, fully quit and reopen the app; closing only the window can leave it running without loading the new TasksAI tools.
 
 ## Privacy and support
 

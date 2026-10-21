@@ -18,9 +18,10 @@ The official product ID is `realtor`, the MCP tool prefix is
 ## AI-assistant install prompt
 
 Copy this prompt into ChatGPT desktop's Codex workspace, standalone Codex,
-Cursor, or Windsurf running on the computer where you want to use
-RealtorTasksAI. A phone cannot host the local installation. ChatGPT Remote can
-steer a connected desktop host. Claude Desktop uses the Terminal route below.
+Cursor, Windsurf, or Google Antigravity running on the computer where you want
+to use RealtorTasksAI. A phone cannot host the local installation. ChatGPT
+Remote can steer a connected desktop host. Claude Desktop uses the Terminal
+route below.
 
 > Please set up RealtorTasksAI from
 > https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/realtor.
@@ -36,11 +37,11 @@ check, and report success only after it passes.
 For Claude Desktop:
 
 ```bash
-npm exec --package=@tasksai/install@0.1.47 --call 'tasksai-install realtor --source https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/realtor --client claude-desktop'
+npm exec --package=@tasksai/install@0.1.48 --call 'tasksai-install realtor --source https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/realtor --client claude-desktop'
 ```
 
-Replace `claude-desktop` with `cursor`, `windsurf`, or `codex` when installing
-for a different supported client. Node.js and npm are required.
+Replace `claude-desktop` with `cursor`, `windsurf`, `codex`, `gemini`, or `antigravity` when installing
+for a different supported client. Node.js and npm are required. For personal Google accounts, install Google Antigravity and select `antigravity`; use `gemini` only for a supported legacy Gemini CLI account or API configuration.
 
 ## Verify the installation
 
@@ -48,11 +49,12 @@ The installer runs doctor after writing the selected client configuration. It
 can also be rerun explicitly for the same client:
 
 ```bash
-npm exec --package=@tasksai/install@0.1.47 --call 'tasksai-install realtor doctor --client claude-desktop'
+npm exec --package=@tasksai/install@0.1.48 --call 'tasksai-install realtor doctor --client claude-desktop'
 ```
 
-A passing check prints `TasksAI doctor passed.` Restart the selected client,
-start a new conversation if needed, and try:
+A passing check prints `TasksAI doctor passed.` Restart the selected client. If
+you selected Google Antigravity, fully quit and reopen the app. Then start a new
+conversation if needed and try:
 
 > Help me create an open-house buyer follow-up email from my showing notes. Ask
 > me for the property, the buyer's stated priorities, and the next step, then
@@ -67,6 +69,12 @@ Finished files are saved locally under
 - Cursor (`cursor`)
 - Windsurf (`windsurf`)
 - Codex (`codex`)
+- Gemini CLI (`gemini`)
+- Google Antigravity (`antigravity`)
+
+## Google Gemini clients
+
+Use `antigravity` for the Google Antigravity desktop app or terminal client with a personal Google account. Use `gemini` only for the legacy Gemini CLI when an API-key or enterprise configuration still supports it. Antigravity uses `~/.gemini/config/mcp_config.json`; the legacy client uses `~/.gemini/settings.json`. After installation, restart the selected client. For the Google Antigravity desktop app, fully quit and reopen the app; closing only the window can leave it running without loading the new TasksAI tools.
 
 ## Privacy boundary
 

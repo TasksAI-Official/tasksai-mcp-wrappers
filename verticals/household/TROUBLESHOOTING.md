@@ -32,8 +32,8 @@ Run doctor with the same client selected during installation. For example:
 npm exec --package=@tasksai/install --call 'tasksai-install household doctor --client claude-desktop'
 ```
 
-Supported client values are `claude-desktop`, `cursor`, `windsurf`, and
-`codex`. A passing check prints `TasksAI doctor passed.`
+Supported client values are `claude-desktop`, `cursor`, `windsurf`, `codex`,
+`gemini`, and `antigravity`. A passing check prints `TasksAI doctor passed.`
 
 ## The installer cannot write a required path
 
@@ -45,9 +45,10 @@ directory, but the selected client configuration must still be writable.
 
 ## Tools do not appear after doctor passes
 
-Restart Claude Desktop, Cursor, Windsurf, or Codex after installation. Start a
-new conversation or reload the workspace if the client caches MCP tools. Then
-ask: `Check my HouseholdTasksAI credit balance.`
+Restart Claude Desktop, Cursor, Windsurf, Codex, or Gemini CLI after
+installation. For Google Antigravity, fully quit and reopen the app. Start a new
+conversation or reload the workspace if the client caches MCP tools. Then ask:
+`Check my HouseholdTasksAI credit balance.`
 
 ## A finished file is not visible
 
@@ -55,6 +56,10 @@ Ask the assistant to use `householdtasksai_save_document`. By default, files are
 saved under `~/Documents/TasksAI/HouseholdTasksAI/`. If `TASKSAI_OUTPUT_DIR` is
 set, check that configured folder. Local output does not appear on the
 HouseholdTasksAI website.
+
+## Google Gemini clients
+
+Use `antigravity` for the Google Antigravity desktop app or terminal client with a personal Google account. Use `gemini` only for the legacy Gemini CLI when an API-key or enterprise configuration still supports it. After installation, restart the selected client. For the Google Antigravity desktop app, fully quit and reopen the app; closing only the window can leave it running without loading the new TasksAI tools.
 
 ## No credits are available
 
