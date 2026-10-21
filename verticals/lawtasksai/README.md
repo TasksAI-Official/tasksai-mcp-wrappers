@@ -11,7 +11,7 @@ npm exec --package=@tasksai/install --call 'tasksai-install lawtasksai --source 
 ```
 
 Supported client values are `claude-desktop`, `cursor`, `windsurf`, `codex`,
-`gemini`, and `antigravity`. For personal Google accounts, install Google Antigravity CLI; use `gemini` only for a supported legacy account or API configuration. After installation, run:
+`gemini`, and `antigravity`. For personal Google accounts, install Google Antigravity; use `gemini` only for a supported legacy account or API configuration. After installation, run:
 
 ```bash
 npm exec --package=@tasksai/install --call 'tasksai-install lawtasksai doctor --client claude-desktop'
@@ -29,7 +29,7 @@ https://lawtasksai.com
 
 ## Google Gemini clients
 
-Use `antigravity` for Google Antigravity CLI with a personal Google account. Use `gemini` only for the legacy Gemini CLI when an API-key or enterprise configuration still supports it. Antigravity uses `~/.gemini/config/mcp_config.json`; the legacy client uses `~/.gemini/settings.json`. Restart the selected client after installation.
+Use `antigravity` for the Google Antigravity desktop app or terminal client with a personal Google account. Use `gemini` only for the legacy Gemini CLI when an API-key or enterprise configuration still supports it. Antigravity uses `~/.gemini/config/mcp_config.json`; the legacy client uses `~/.gemini/settings.json`. After installation, restart the selected client. For the Google Antigravity desktop app, fully quit and reopen the app; closing only the window can leave it running without loading the new TasksAI tools.
 
 ## Privacy
 

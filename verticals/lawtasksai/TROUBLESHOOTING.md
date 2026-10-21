@@ -20,10 +20,10 @@ Run the doctor check with the client selected during installation:
 npm exec --package=@tasksai/install --call 'tasksai-install lawtasksai doctor --client claude-desktop'
 ```
 
-Supported values are `claude-desktop`, `cursor`, `windsurf`, `codex`, and
-`gemini`. Restart Claude Desktop, Cursor, Windsurf, Codex, or Gemini CLI after
-the check passes because these applications normally load MCP configuration at
-startup.
+Supported values are `claude-desktop`, `cursor`, `windsurf`, `codex`, `gemini`,
+and `antigravity`. Restart Claude Desktop, Cursor, Windsurf, Codex, or Gemini CLI
+after the check passes. For Google Antigravity, fully quit and reopen the app.
+These applications normally load MCP configuration at startup.
 
 ## No credits available
 
@@ -35,4 +35,4 @@ https://lawtasksai.com/#pricing
 
 ## Google Gemini clients
 
-Use `antigravity` for Google Antigravity CLI with a personal Google account. Use `gemini` only for the legacy Gemini CLI when an API-key or enterprise configuration still supports it. Restart the selected client after installation.
+Use `antigravity` for the Google Antigravity desktop app or terminal client with a personal Google account. Use `gemini` only for the legacy Gemini CLI when an API-key or enterprise configuration still supports it. After installation, restart the selected client. For the Google Antigravity desktop app, fully quit and reopen the app; closing only the window can leave it running without loading the new TasksAI tools.

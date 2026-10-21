@@ -11,7 +11,7 @@
       "command": "npm",
       "args": [
         "exec",
-        "--package=@tasksai/install@0.1.47",
+        "--package=@tasksai/install@0.1.48",
         "--call",
         "tasksai-install realtor --source https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/realtor"
       ],
@@ -79,7 +79,7 @@
     "command": "npm",
     "args": [
       "exec",
-      "--package=@tasksai/install@0.1.47",
+      "--package=@tasksai/install@0.1.48",
       "--call",
       "tasksai-install realtor doctor"
     ]
@@ -94,7 +94,7 @@
     "command": "npm",
     "args": [
       "exec",
-      "--package=@tasksai/install@0.1.47",
+      "--package=@tasksai/install@0.1.48",
       "--call",
       "tasksai-install realtor uninstall"
     ]
@@ -115,9 +115,9 @@
     "requires": "Command execution on the customer's actual computer and write access to the selected client configuration; a remote sandbox alone is insufficient.",
     "node_missing": "Use the verified packaged native launcher below instead of asking the customer to install Node manually.",
     "native_bootstrap": {
-      "package_version": "0.1.47",
-      "archive_url": "https://registry.npmjs.org/@tasksai/install/-/install-0.1.47.tgz",
-      "archive_sha256": "61867110296b19efa6b4487c0ef930db53b2941b009ae3b38250218e92a447c5",
+      "package_version": "0.1.48",
+      "archive_url": "https://registry.npmjs.org/@tasksai/install/-/install-0.1.48.tgz",
+      "archive_sha256": "afd689a830500c6cf03178a8b31cf9e6b73e4fec247387875373e05a2c5c90f3",
       "macos": "package/bootstrap/Install RealtorTasksAI.command",
       "windows": "package/bootstrap/Install RealtorTasksAI.ps1",
       "requires_complete_package": true,

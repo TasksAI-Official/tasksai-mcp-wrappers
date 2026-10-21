@@ -29,11 +29,11 @@ fallback; do not paste a license key into chat or MCP client configuration.
 Run doctor with the same client selected during installation. For example:
 
 ```bash
-npm exec --package=@tasksai/install@0.1.47 --call 'tasksai-install teacher doctor --client claude-desktop'
+npm exec --package=@tasksai/install@0.1.48 --call 'tasksai-install teacher doctor --client claude-desktop'
 ```
 
-Supported client values are `claude-desktop`, `cursor`, `windsurf`, `codex`, and
-`gemini`. A passing check prints `TasksAI doctor passed.`
+Supported client values are `claude-desktop`, `cursor`, `windsurf`, `codex`,
+`gemini`, and `antigravity`. A passing check prints `TasksAI doctor passed.`
 
 ## The installer cannot write a required path
 
@@ -45,9 +45,10 @@ directory, but the selected client configuration must still be writable.
 
 ## Tools do not appear after doctor passes
 
-Restart Claude Desktop, Cursor, Windsurf, Codex, or Gemini CLI after installation. Start a
-new conversation or reload the workspace if the client caches MCP tools. Then
-ask: `Check my TeacherTasksAI credit balance.`
+Restart Claude Desktop, Cursor, Windsurf, Codex, or Gemini CLI after
+installation. For Google Antigravity, fully quit and reopen the app. Start a new
+conversation or reload the workspace if the client caches MCP tools. Then ask:
+`Check my TeacherTasksAI credit balance.`
 
 ## A finished file is not visible
 
@@ -58,7 +59,7 @@ TeacherTasksAI website.
 
 ## Google Gemini clients
 
-Use `antigravity` for Google Antigravity CLI with a personal Google account. Use `gemini` only for the legacy Gemini CLI when an API-key or enterprise configuration still supports it. Restart the selected client after installation.
+Use `antigravity` for the Google Antigravity desktop app or terminal client with a personal Google account. Use `gemini` only for the legacy Gemini CLI when an API-key or enterprise configuration still supports it. After installation, restart the selected client. For the Google Antigravity desktop app, fully quit and reopen the app; closing only the window can leave it running without loading the new TasksAI tools.
 
 ## No credits are available
 

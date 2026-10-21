@@ -18,7 +18,8 @@ and the installer package is `@tasksai/install`.
 
 ## AI-assistant install prompt
 
-Copy this prompt into Claude Desktop, Cursor, Windsurf, Codex, or Gemini CLI:
+Copy this prompt into Claude Desktop, Cursor, Windsurf, Codex, or Google
+Antigravity:
 
 > Set up FarmerTasksAI from the official source at
 > https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/farmer.
@@ -39,7 +40,7 @@ npm exec --package=@tasksai/install --call 'tasksai-install farmer --source http
 ```
 
 Replace `claude-desktop` with `cursor`, `windsurf`, `codex`, `gemini`, or `antigravity` when installing
-for a different supported client. Node.js and npm are required. For personal Google accounts, install Google Antigravity CLI and select `antigravity`; use `gemini` only for a supported legacy Gemini CLI account or API configuration.
+for a different supported client. Node.js and npm are required. For personal Google accounts, install Google Antigravity and select `antigravity`; use `gemini` only for a supported legacy Gemini CLI account or API configuration.
 
 ## Verify the installation
 
@@ -50,8 +51,9 @@ can also be rerun explicitly for the same client:
 npm exec --package=@tasksai/install --call 'tasksai-install farmer doctor --client claude-desktop'
 ```
 
-A passing check prints `TasksAI doctor passed.` Restart the selected client,
-start a new conversation if needed, and try:
+A passing check prints `TasksAI doctor passed.` Restart the selected client. If
+you selected Google Antigravity, fully quit and reopen the app. Then start a new
+conversation if needed and try:
 
 > Help me create a crop production record from my notes. Ask me for the crop,
 > field, acreage, planting date, variety, inputs, and observations, then
@@ -67,11 +69,11 @@ unless `TASKSAI_OUTPUT_DIR` is configured.
 - Windsurf (`windsurf`)
 - Codex (`codex`)
 - Gemini CLI (`gemini`)
-- Google Antigravity CLI (`antigravity`)
+- Google Antigravity (`antigravity`)
 
 ## Google Gemini clients
 
-Use `antigravity` for Google Antigravity CLI with a personal Google account. Use `gemini` only for the legacy Gemini CLI when an API-key or enterprise configuration still supports it. Antigravity uses `~/.gemini/config/mcp_config.json`; the legacy client uses `~/.gemini/settings.json`. Restart the selected client after installation.
+Use `antigravity` for the Google Antigravity desktop app or terminal client with a personal Google account. Use `gemini` only for the legacy Gemini CLI when an API-key or enterprise configuration still supports it. Antigravity uses `~/.gemini/config/mcp_config.json`; the legacy client uses `~/.gemini/settings.json`. After installation, restart the selected client. For the Google Antigravity desktop app, fully quit and reopen the app; closing only the window can leave it running without loading the new TasksAI tools.
 
 ## Privacy boundary
 
