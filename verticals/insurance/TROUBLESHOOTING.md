@@ -12,4 +12,8 @@ Run doctor with the same client used for installation:
 npm exec --package=@tasksai/install --call 'tasksai-install insurance doctor --client claude-desktop'
 ```
 
-Supported clients are `claude-desktop`, `cursor`, `windsurf`, `codex`, and `gemini`. Restart the selected client after doctor passes. Contact hello@insurancetasksai.com without sending task records or generated files.
+Supported clients are `claude-desktop`, `cursor`, `windsurf`, `codex`, `gemini`, and `antigravity`. Restart the selected client after doctor passes. Contact hello@insurancetasksai.com without sending task records or generated files.
+
+## Google Gemini clients
+
+Use `antigravity` for Google Antigravity CLI with a personal Google account. Use `gemini` only for the legacy Gemini CLI when an API-key or enterprise configuration still supports it. Restart the selected client after installation.

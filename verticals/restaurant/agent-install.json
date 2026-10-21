@@ -26,7 +26,8 @@
     "cursor",
     "windsurf",
     "codex",
-    "gemini"
+    "gemini",
+    "antigravity"
   ],
   "permissions": {
     "write_paths": {
@@ -36,7 +37,8 @@
         "~/.cursor/mcp.json",
         "~/.codeium/windsurf/mcp_config.json",
         "~/.codex/config.toml",
-        "~/.gemini/settings.json"
+        "~/.gemini/settings.json",
+        "~/.gemini/config/mcp_config.json"
       ],
       "windows": [
         "%LOCALAPPDATA%\\TasksAI\\restaurant",
@@ -44,7 +46,8 @@
         "%USERPROFILE%\\.cursor\\mcp.json",
         "%USERPROFILE%\\.codeium\\windsurf\\mcp_config.json",
         "%USERPROFILE%\\.codex\\config.toml",
-        "%USERPROFILE%\\.gemini\\settings.json"
+        "%USERPROFILE%\\.gemini\\settings.json",
+        "%USERPROFILE%\\.gemini\\config\\mcp_config.json"
       ],
       "linux": [
         "~/.local/share/TasksAI/restaurant",
@@ -52,7 +55,8 @@
         "~/.cursor/mcp.json",
         "~/.codeium/windsurf/mcp_config.json",
         "~/.codex/config.toml",
-        "~/.gemini/settings.json"
+        "~/.gemini/settings.json",
+        "~/.gemini/config/mcp_config.json"
       ]
     },
     "environment_overrides": [

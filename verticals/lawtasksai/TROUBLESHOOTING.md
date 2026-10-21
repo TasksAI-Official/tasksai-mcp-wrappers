@@ -32,3 +32,7 @@ Visit:
 ```text
 https://lawtasksai.com/#pricing
 ```
+
+## Google Gemini clients
+
+Use `antigravity` for Google Antigravity CLI with a personal Google account. Use `gemini` only for the legacy Gemini CLI when an API-key or enterprise configuration still supports it. Restart the selected client after installation.

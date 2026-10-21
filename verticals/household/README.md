@@ -28,6 +28,10 @@ npm exec --package=@tasksai/install --call 'tasksai-install household doctor --c
 
 Help me make a weekly household schedule. Ask for the week, time zone, commitments, travel time, and responsibilities. Flag conflicts and missing information, then save the schedule as a local Word document.
 
+## Google Gemini clients
+
+Use `antigravity` for Google Antigravity CLI with a personal Google account. Use `gemini` only for the legacy Gemini CLI when an API-key or enterprise configuration still supports it. Antigravity uses `~/.gemini/config/mcp_config.json`; the legacy client uses `~/.gemini/settings.json`. Restart the selected client after installation.
+
 ## Privacy and support
 
 HouseholdTasksAI servers handle authentication, account and credit state, catalog metadata, licensed workflow delivery, and content-free activation events. HouseholdTasksAI does not receive household notes, health records, prompt text, generated drafts, or local file paths. The user's chosen AI assistant processes supplied information under its own privacy terms. Finished files are saved locally.

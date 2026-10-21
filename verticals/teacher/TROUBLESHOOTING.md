@@ -56,6 +56,10 @@ saved under `~/Documents/TasksAI/TeacherTasksAI/`. If `TASKSAI_OUTPUT_DIR` is
 set, check that configured folder. Local output does not appear on the
 TeacherTasksAI website.
 
+## Google Gemini clients
+
+Use `antigravity` for Google Antigravity CLI with a personal Google account. Use `gemini` only for the legacy Gemini CLI when an API-key or enterprise configuration still supports it. Restart the selected client after installation.
+
 ## No credits are available
 
 Visit https://teachertasksai.com/#pricing. If the balance appears incorrect,

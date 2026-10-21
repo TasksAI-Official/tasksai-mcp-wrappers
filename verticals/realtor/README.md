@@ -39,8 +39,8 @@ For Claude Desktop:
 npm exec --package=@tasksai/install@0.1.47 --call 'tasksai-install realtor --source https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/realtor --client claude-desktop'
 ```
 
-Replace `claude-desktop` with `cursor`, `windsurf`, `codex`, or `gemini` when installing
-for a different supported client. Node.js and npm are required. Gemini users must also install Gemini CLI and sign in with their chosen Google account.
+Replace `claude-desktop` with `cursor`, `windsurf`, `codex`, `gemini`, or `antigravity` when installing
+for a different supported client. Node.js and npm are required. For personal Google accounts, install Google Antigravity CLI and select `antigravity`; use `gemini` only for a supported legacy Gemini CLI account or API configuration.
 
 ## Verify the installation
 
@@ -68,6 +68,11 @@ Finished files are saved locally under
 - Windsurf (`windsurf`)
 - Codex (`codex`)
 - Gemini CLI (`gemini`)
+- Google Antigravity CLI (`antigravity`)
+
+## Google Gemini clients
+
+Use `antigravity` for Google Antigravity CLI with a personal Google account. Use `gemini` only for the legacy Gemini CLI when an API-key or enterprise configuration still supports it. Antigravity uses `~/.gemini/config/mcp_config.json`; the legacy client uses `~/.gemini/settings.json`. Restart the selected client after installation.
 
 ## Privacy boundary
 

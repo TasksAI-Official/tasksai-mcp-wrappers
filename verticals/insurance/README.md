@@ -18,7 +18,7 @@ For Claude Desktop:
 npm exec --package=@tasksai/install --call 'tasksai-install insurance --source https://github.com/TasksAI-Official/tasksai-mcp-wrappers/tree/main/verticals/insurance --client claude-desktop'
 ```
 
-Replace `claude-desktop` with `cursor`, `windsurf`, `codex`, or `gemini` for another supported client.
+Replace `claude-desktop` with `cursor`, `windsurf`, `codex`, `gemini`, or `antigravity` for another supported client.
 
 ## Verify and start
 
@@ -31,6 +31,10 @@ A passing check prints `TasksAI doctor passed.` Restart the selected client, the
 > Help me prepare a policy summary letter for a fictional small business. Ask for the coverage types, limits, deductibles, exclusions to highlight, renewal date, and contact details, then save the finished letter as a local Word document.
 
 Finished files are saved locally under `~/Documents/TasksAI/InsuranceTasksAI/` unless `TASKSAI_OUTPUT_DIR` is configured.
+
+## Google Gemini clients
+
+Use `antigravity` for Google Antigravity CLI with a personal Google account. Use `gemini` only for the legacy Gemini CLI when an API-key or enterprise configuration still supports it. Antigravity uses `~/.gemini/config/mcp_config.json`; the legacy client uses `~/.gemini/settings.json`. Restart the selected client after installation.
 
 ## Privacy
 
